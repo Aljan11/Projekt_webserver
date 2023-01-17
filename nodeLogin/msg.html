@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>{{Välkomen till ___}}!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+  </head>
+  <body>
+    <div id="login">
+      <h1>{{Login}}</h1>
+      <form action="/auth" method="post"> 
+        <label for="username">
+          <!-- font awesome icon -->
+          <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="username" placeholder="Username" id="username" required> //här tar vi använde namn av personen som vill login in och vi säger att det är obligatorisk
+        <label for="password">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input type="password" name="password" placeholder="Password" id="password" required> // här spårar vi lösenord
+        <input type="submit" value="Login"> //knappen som ska skickar in formularen
+      </form>
+    </div>
+  </body>
+</html>
